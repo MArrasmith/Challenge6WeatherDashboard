@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
 </head>
+
 <body>
-    
+    <div id="searchBox">
+        <h2>Weather Dashboard</h2>
+        <div id="searchBar">
+            <input id="searchField" type="search" autofocus="true" class="form-input"/>
+        </div> 
+        <button id="searchBtn" type="submit">Search</button>
+    </div>
+
+    <div id="currentWeather">
+        <h5 class="loacation"></h5>
+        <p class="date"></p>
+        <p class="weatherPic"></p>
+        <p class="highTemp"></p>
+        <p class="lowTemp"></p>
+        <p class="windSpeed"></p>
+        <p class="humidity"></p>
+    </div>
+
+    <div id="fiveDayForecast">
+        <div id="day1">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="highTemp"></p>
+            <p class="lowTemp"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+
+        <div id="day2">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="highTemp"></p>
+            <p class="lowTemp"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+
+        <div id="day3">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="highTemp"></p>
+            <p class="lowTemp"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+
+        <div id="day4">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="highTemp"></p>
+            <p class="lowTemp"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+
+        <div id="day5">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="highTemp"></p>
+            <p class="lowTemp"></p>
+            <p class="windSpeed"></p>
+            <p class="humidity"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

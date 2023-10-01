@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(36, 83, 118);
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#searchBox {
+    border-style: solid;
+    border-color: rgb(56, 56, 52);
+    background-color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 200px;
+}
+
+#searchBar {
+    padding: auto;
+    margin-top: 10px;
+}
+
+#searchBtn {
+    background-color: gray;
+    color: black;
+    border-color: white;
+    border-radius: 5px;
+    margin-bottom: 110px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+#currentWeather {
+    border-color: black;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    padding: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 20px;
+}
+
+#fiveDayForecast {
+    display: inline-block;
+    
+}
+
+#day1 {
+    border-color: black;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    padding: auto;
+    margin: 10px;
+}
+
+#day2 {
+    border-color: black;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    padding: auto;
+    margin: 10px;
+}
+
+#day3 {
+    border-color: black;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    padding: auto;
+    margin: 10px;
+}
+
+#day4 {
+    border-color: black;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    padding: auto;
+    margin: 10px;
+}
+
+#day5 {
+    border-color: black;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    padding: auto;
+    margin: 10px;
+}
