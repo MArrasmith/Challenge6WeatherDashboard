@@ -2,7 +2,7 @@ body {
     background-color: rgb(36, 83, 118);
     color: black;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -19,7 +19,9 @@ body {
     margin-bottom: 30px;
 }
 
-
+#currentLocation {
+    font-size: 25px;
+}
 
 #currentWeather {
     border-color: black;
@@ -27,9 +29,10 @@ body {
     background-color: white;
     color: black;
     padding: auto;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 35%;
+    margin-right: 35%;
     margin-bottom: 20px;
+    text-size-adjust: auto;
 }
 
 #fiveDayForecast {

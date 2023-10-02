@@ -12,22 +12,28 @@
 
 var searchBtn = document.querySelector("#searchBtn");
 searchBtn.addEventListener("click", weatherApi)
-    
-
 
 function weatherApi() {
     var userInput = document.getElementById("searchField").value;
-    var requestUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + userInput + "&APPID=65bf489682ee4f3dfe5a4a1c5d31f500";
+    var requestUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + userInput + "&APPID=65bf489682ee4f3dfe5a4a1c5d31f500&units=imperial";
 
     fetch(requestUrl)
         .then(function (response) {
             return response.json()
         })
         .then(function (data) {
+            var location = data['name']
+            var country = data['sys']['country']
             var temp = data['main']['temp']
             var humidity = data['main']['humidity']
             var windspeed = data['wind']['speed']
             var weatherDescription = data['weather'][0]['description']
+
+            currentLocation.innerHTML = "Location: " + location + " " + country
+            currentConditions.innerHTML = "Current conditions: " + weatherDescription
+            currentTemp.innerHTML = "Current temperature: " + temp
+            currentHumidity.innerHTML = "Current humidity: " + humidity
+            currentWindspeed = currentWindSpeed.innerHTML = "Current wind speeds: " + windspeed
             console.log(weatherDescription, temp, humidity, windspeed)
         })
-    }
+}

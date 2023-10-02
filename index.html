@@ -9,20 +9,22 @@
 </head>
 
 <body>
+
+    <h1 id="currentDateTime"></h1>
     <div id="searchBox">
         <h2>Weather Dashboard</h2>
-        <input type="text" id="searchField" placeholder="City, Country Code">
+        <input type="text" id="searchField" placeholder="City,State,Country Code">
         <button type="button" id="searchBtn">Search</button>
     </div>
 
     <div id="currentWeather">
-        <h5 class="location"></h5>
-        <p class="date"></p>
-        <p class="weatherPic"></p>
-        <p class="highTemp"></p>
-        <p class="lowTemp"></p>
-        <p class="windSpeed"></p>
-        <p class="humidity"></p>
+        <h5 id="currentLocation"></h5>
+        <p id="currentConditions"></p>
+        <p id="currentDate"></p>
+        <p id="currentWeatherPic"></p>
+        <p id="currentTemp"></p>
+        <p id="currentWindSpeed"></p>
+        <p id="currentHumidity"></p>
     </div>
 
     <div id="fiveDayForecast">
@@ -74,6 +76,7 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 </body>
 
 </html>
