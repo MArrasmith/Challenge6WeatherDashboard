@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
 </head>
+
 <body>
-    
+
+    <h1 id="currentDateTime"></h1>
+    <div id="searchBox">
+        <h2>Weather Dashboard</h2>
+        <input type="text" id="searchField" placeholder="City,State,Country Code">
+        <button type="button" id="searchBtn">Search</button>
+    </div>
+
+    <div id="currentWeather">
+        <h3 id="currentLocation"></h3>
+        <p id="currentConditionIcon"></p>
+        <p id="currentConditions"></p>
+        <p id="currentDate"></p>
+        <p id="currentWeatherPic"></p>
+        <p id="currentTemp"></p>
+        <p id="currentWindSpeed"></p>
+        <p id="currentHumidity"></p>
+    </div>
+
+    <div id="fiveDayForecast">
+        <div id="day1">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="temp" id="day1temp"></p>
+            <p class="windSpeed" id="day1windSpeed"></p>
+            <p class="humidity" id="day1humidity"></p>
+        </div>
+
+        <div id="day2">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="temp" id="day2temp"></p>
+            <p class="windSpeed" id="day2windSpeed"></p>
+            <p class="humidity"id=day2humidity></p>
+        </div>
+
+        <div id="day3">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="temp" id="day3temp"></p>
+            <p class="windSpeed" id="day3windSpeed"></p>
+            <p class="humidity" id="day3humidity"></p>
+        </div>
+
+        <div id="day4">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="temp" id="day4temp"></p>
+            <p class="windSpeed" id="day4windSpeed"></p>
+            <p class="humidity" id="day4humidity"></p>
+        </div>
+
+        <div id="day5">
+            <p class="date"></p>
+            <p class="weatherPic"></p>
+            <p class="temp" id="day5temp"></p>
+            <p class="windSpeed" id="day5windSpeed"></p>
+            <p class="humidity" id="day5humidity"></p>
+        </div>
+    </div>
+
+    <div id="searchHistory"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
