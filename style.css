@@ -15,24 +15,11 @@ body {
     margin-top: 200px;
 }
 
-#searchBar {
-    padding: auto;
-    margin-top: 10px;
+#searchBtn {
+    margin-bottom: 30px;
 }
 
-#searchBtn {
-    background-color: gray;
-    color: black;
-    border-color: white;
-    border-radius: 5px;
-    margin-bottom: 110px;
-    margin-top: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 30px;
-}
+
 
 #currentWeather {
     border-color: black;

@@ -10,31 +10,24 @@
 
 //USER INPUT 
 
-var userInput = "columbus, oh, usa"
 var searchBtn = document.querySelector("#searchBtn");
-
-
-
-function testParameters() {
-    console.log(userInput)
-};
-
-searchBtn.addEventListener("click", testParameters())
-
+searchBtn.addEventListener("click", weatherApi)
+    
 
 
 function weatherApi() {
+    var userInput = document.getElementById("searchField").value;
     var requestUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + userInput + "&APPID=65bf489682ee4f3dfe5a4a1c5d31f500";
 
     fetch(requestUrl)
-     .then(function(response) {
-        return response.json()
-    })
-    .then(function (data) {
-    console.log(data)
-    })
-}
-
-weatherApi()
-
-// {city name},{state code},{country code}&limit={limit}&appid={API key}
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (data) {
+            var temp = data['main']['temp']
+            var humidity = data['main']['humidity']
+            var windspeed = data['wind']['speed']
+            var weatherDescription = data['weather'][0]['description']
+            console.log(weatherDescription, temp, humidity, windspeed)
+        })
+    }
